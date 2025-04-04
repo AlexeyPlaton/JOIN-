@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Visual JOIN</title>
+    <title>JOINы наглядно</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,7 +34,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-3962579-3', 'spathon.com');
+      ga('create', 'UA-3962579-3', 'QA Lab');
       ga('send', 'pageview');
 
     </script>
@@ -50,8 +50,8 @@
     <div class="container">
 
       <h1 class="title">
-        Visual JOIN
-        <span>Understand how joins work by interacting and see it visually</span>
+        JOINы наглядно
+        <span>Наглядное представление работы джионов</span>
       </h1>
 
       <div class="row joins clearfix">
@@ -114,7 +114,7 @@
           <table>
             <tr>
               <th>ID</th>
-              <th class="user">Name</th>
+              <th class="user">Имя</th>
             </tr>
             <tr ng-class="isNotSelected(user.id)" ng-repeat="user in users">
               <td>{{user.id}}</td>
@@ -133,8 +133,8 @@
           <h3>JOIN</h3>
           <table>
             <tr>
-              <th class="user">Name</th>
-              <th class="like">Like</th>
+              <th class="user">Имя</th>
+              <th class="like">Предпочтения</th>
             </tr>
             <tr ng-repeat="join in joins">
               <td ng-class="{ 'is-null': (join.name == 'NULL') }">{{ join.name }}</td>
@@ -143,9 +143,9 @@
           </table>
         </div>
 
-        <!-- Likes -->
+        <!-- Предпочтения -->
         <div class="col-sm-4">
-          <h3>Likes</h3>
+          <h3>Предпочтения</h3>
           <table>
             <tr>
               <th>User ID</th>
@@ -171,7 +171,7 @@
         <form ng-submit="addItem()" ng-show="modalType == 'add'">
           <input type="text" id="addId" ng-model="addId" placeholder="ID" class="input-sm">
           <input type="text" ng-model="addName" placeholder="{{ (type == 'likes') ? 'Like' : 'Name' }}">
-          <button type="submit">Add</button>
+          <button type="submit">Добавить</button>
         </form>
       </div>
 
